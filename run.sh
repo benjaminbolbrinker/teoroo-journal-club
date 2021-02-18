@@ -1,10 +1,10 @@
 #!/usr/bin/bash
 
 mkdir ./build -p
-gfortran -fno-inline-small-functions -O3 -o ./build/fib_f03 ./src/fib.f03
-gcc -fno-inline-small-functions -O3 -o ./build/fib_c ./src/fib.c
-g++ -fno-inline-small-functions -O3 -o ./build/fib_cpp ./src/fib.cpp
-rustc -C opt-level=3 -o ./build/fib_rs ./src/fib.rs 
+gfortran -fno-inline-small-functions -O3 -o ./build/fib_f03 ./src/fortran/fib.f03
+gcc -fno-inline-small-functions -O3 -o ./build/fib_c ./src/c/fib.c
+g++ -fno-inline-small-functions -O3 -o ./build/fib_cpp ./src/cpp/fib.cpp
+rustc -C opt-level=3 -o ./build/fib_rs ./src/rust/fib.rs 
 
 echo "gfortran:"
 time ./build/fib_f03
@@ -23,6 +23,6 @@ time ./build/fib_rs
 echo "-------------"
 echo ""
 echo "python:"
-time python ./src/fib.py
+time python ./src/python/fib.py
 echo "-------------"
 echo ""

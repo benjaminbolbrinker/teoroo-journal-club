@@ -10,6 +10,12 @@ Python Boilerplate contains all the boilerplate you need to create a Python pack
 * Documentation: https://unitcellsampling.readthedocs.io.
 
 
+Installation
+------------
+
+Install gcc, g++, gfortran and rust
+
+
 Features
 --------
 

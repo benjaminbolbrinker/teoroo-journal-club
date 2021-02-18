@@ -3,13 +3,12 @@
 """The setup script."""
 
 from setuptools import setup, find_packages, Extension
+from setuptools_rust import Binding, RustExtension
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
-requirements = [
-    "numpy==1.19.2",
-]
+requirements = []
 
 setup_requirements = []
 
@@ -33,7 +32,6 @@ setup(
     description="Interface Python with Fortran, Rust and C",
     install_requires=requirements,
     license="GNU General Public License v3",
-    long_description=readme + '\n\n' + history,
     include_package_data=True,
     name='how-to-speedup-python',
     setup_requires=setup_requirements,
@@ -42,8 +40,8 @@ setup(
     url='https://github.com/benjaminbolbrinker/unitcellsampling',
     version='0.1.0',
     zip_safe=False,
-    ext_modules=[Extension('c_lib',
-                           sources=['src/c.c'])]
+    ext_modules=[Extension('fib_c',
+                           sources=['src/c/fibpy.c'])]
     # rust_extensions=[RustExtension(
     #     "gridmc", path="src/gridmc/Cargo.toml", binding=Binding.PyO3)]
 )

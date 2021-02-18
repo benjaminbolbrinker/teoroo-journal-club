@@ -11,4 +11,5 @@ static uint64_t fib(uint64_t n)
 int main()
 {
     printf("g++ says the 46th Fibonacci number is %lu \n", fib(46));
+    return 0;
 }
