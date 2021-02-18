@@ -6,7 +6,7 @@
 /* self points to the object associated with the function */
 /* args points to the Python tuple containing the arguments */
 static PyObject *
-spam_system(PyObject *self, PyObject *args)
+calculate_fibonacci(PyObject *self, PyObject *args)
 {
     unsigned long *nth_fibonacci;
 
@@ -18,7 +18,7 @@ spam_system(PyObject *self, PyObject *args)
 }
 
 static PyMethodDef SpamMethods[] = {
-    {"system", spam_system, METH_VARARGS,
+    {"fib", calculate_fibonacci, METH_VARARGS,
      "Execute a shell command."},
     {NULL, NULL, 0, NULL} /* Sentinel */
 };
