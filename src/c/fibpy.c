@@ -10,26 +10,25 @@ calculate_fibonacci(PyObject *self, PyObject *args)
 {
     unsigned long *nth_fibonacci;
 
-    // Convert Python tuple to C-type
+    /* Convert Python tuple to C-type */
     if (!PyArg_ParseTuple(args, "l", &nth_fibonacci))
         return NULL;
 
     return PyLong_FromLong(fib(nth_fibonacci));
 }
 
-static PyMethodDef SpamMethods[] = {
+static PyMethodDef FibMethods[] = {
     {"fib", calculate_fibonacci, METH_VARARGS,
      "Execute a shell command."},
-    {NULL, NULL, 0, NULL} /* Sentinel */
-};
+    {NULL, NULL, 0, NULL}};
 
-static struct PyModuleDef spammodule = {
+static struct PyModuleDef fibmodule = {
     PyModuleDef_HEAD_INIT,
     "fib_c", /* name of module */
     NULL,    /* module documentation, may be NULL */
     -1,      /* size of per-interpreter state of the module,
                  or -1 if the module keeps state in global variables. */
-    SpamMethods};
+    FibMethods};
 
 PyMODINIT_FUNC
 PyInit_fib_c(void)

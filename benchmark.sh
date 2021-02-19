@@ -4,7 +4,7 @@ mkdir ./build -p
 gfortran -fno-inline-small-functions -O3 -o ./build/fib_f03 ./src/fortran/fib.f03
 gcc -fno-inline-small-functions -O3 -o ./build/fib_c ./src/c/fib.c
 g++ -fno-inline-small-functions -O3 -o ./build/fib_cpp ./src/cpp/fib.cpp
-rustc -C opt-level=3 -o ./build/fib_rs ./src/rust/fib.rs 
+rustc -C opt-level=3 -o ./build/fib_rs ./src/rust/src/fib.rs 
 
 echo "gfortran:"
 time ./build/fib_f03

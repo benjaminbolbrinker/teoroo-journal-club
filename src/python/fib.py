@@ -4,4 +4,4 @@ def fib(n):
     return fib(n - 1) + fib(n - 2)
 
 if __name__ == "__main__":
-    print("Python says the 46th Fibonacci number is ", fib(46))
+    print("python says the 46th Fibonacci number is ", fib(46))
