@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import fib_c 
 import fib_rs
 import src.python.fib as fib_py
