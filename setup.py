@@ -40,7 +40,7 @@ setup(
     url='https://github.com/benjaminbolbrinker/unitcellsampling',
     version='0.1.0',
     zip_safe=False,
-    ext_modules=[Extension('fib_c', sources=['src/c/fibpy.c'])]
-    # rust_extensions=[RustExtension(
-    #     "gridmc", path="src/gridmc/Cargo.toml", binding=Binding.PyO3)]
+    ext_modules=[Extension('fib_c', sources=['src/c/fibpy.c'])],
+    rust_extensions=[RustExtension(
+        "fib_rs", path="src/rust/Cargo.toml", binding=Binding.PyO3)]
 )

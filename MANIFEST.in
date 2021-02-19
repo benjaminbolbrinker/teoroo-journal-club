@@ -1,0 +1,6 @@
+include AUTHORS.rst
+include LICENSE
+include README.rst
+
+include src/rust/Cargo.toml
+recursive-include src/rust *

@@ -14,6 +14,7 @@ Installation
 ------------
 
 Install gcc, g++, gfortran and rust
+sudo apt install python3-dev python-dev
 
 
 Features
