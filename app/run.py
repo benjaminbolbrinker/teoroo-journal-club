@@ -4,6 +4,9 @@ import fib_c
 import fib_rs
 import src.python.fib as fib_py
 
+print("Calling foreign functions from python:")
+print()
+
 # Call C function
 print("gcc says the 46th Fibonacci number is", fib_c.fib(46))
 print()

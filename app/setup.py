@@ -19,17 +19,18 @@ setup(
     description="Interface Python with Rust and C",
     license="GNU General Public License v3",
     include_package_data=True,
-    name='uu-journal-club',
+    name='teoroo-journal-club',
     url='https://github.com/benjaminbolbrinker/uu-journal-club.git',
     version='0.1.0',
     zip_safe=False,
     ext_modules=[Extension('fib_c',
                            sources=['src/c/fibpy.c'],
+                           include_dirs=['src/c/include'],
                            )
                 ],
-    rust_extensions=[RustExtension('fib_rs',
-                                   path='src/rust/Cargo.toml',
-                                   binding=Binding.PyO3,
-                                   )
-                    ]
+    # rust_extensions=[RustExtension('fib_rs',
+                                   # path='src/rust/Cargo.toml',
+                                   # binding=Binding.PyO3,
+                                   # )
+                    # ]
 )

@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+echo "Running the benchmark"
+echo ""
+
 mkdir ./build -p
 gfortran -fno-inline-small-functions -O3 -o ./build/fib_f03 ./src/fortran/fib.f03
 gcc -fno-inline-small-functions -O3 -o ./build/fib_c ./src/c/fib.c

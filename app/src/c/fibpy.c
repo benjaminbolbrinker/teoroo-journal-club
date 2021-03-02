@@ -1,6 +1,6 @@
 #define PY_SSIZE_T_CLEAN
 #include <Python.h>
-#include "fib.h"
+#include "fib.c"
 
 /* This function always takes two arguments */
 /* self points to the object associated with the function */

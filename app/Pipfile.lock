@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a9c4a9632ac8bab2f817cefa70c2881fa6c4bf309c8081eda97a6a6ebf64de36"
+            "sha256": "a9968ab276f6382de7e7240c541b60c1fa0b57b55e470b93c19e270c9dc1f4f9"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -35,17 +35,20 @@
             "index": "pypi",
             "version": "==0.11.6"
         },
+        "teoroo-journal-club": {
+            "path": ".",
+            "version": "==0.1.0"
+        },
         "toml": {
             "hashes": [
                 "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b",
                 "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"
             ],
-            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2'",
             "version": "==0.10.2"
         },
         "uu-journal-club": {
-            "path": ".",
-            "version": "==0.1.0"
+            "path": "."
         }
     },
     "develop": {}
