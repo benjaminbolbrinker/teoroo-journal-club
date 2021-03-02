@@ -35,12 +35,16 @@ setup(
     include_package_data=True,
     name='how-to-speedup-python',
     setup_requires=setup_requirements,
-    test_suite='tests',
-    tests_require=test_requirements,
-    url='https://github.com/benjaminbolbrinker/unitcellsampling',
+    url='https://github.com/benjaminbolbrinker/uu-journal-club.git',
     version='0.1.0',
     zip_safe=False,
-    ext_modules=[Extension('fib_c', sources=['src/c/fibpy.c'])],
-    rust_extensions=[RustExtension(
-        "fib_rs", path="src/rust/Cargo.toml", binding=Binding.PyO3)]
+    ext_modules=[Extension('fib_c',
+                           sources=['src/c/fibpy.c'],
+                           )
+                ],
+    rust_extensions=[RustExtension('fib_rs',
+                                   path='src/rust/Cargo.toml',
+                                   binding=Binding.PyO3,
+                                   )
+                    ]
 )
