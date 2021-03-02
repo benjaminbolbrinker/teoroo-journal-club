@@ -28,9 +28,9 @@ setup(
                            include_dirs=['src/c/include'],
                            )
                 ],
-    # rust_extensions=[RustExtension('fib_rs',
-                                   # path='src/rust/Cargo.toml',
-                                   # binding=Binding.PyO3,
-                                   # )
-                    # ]
+    rust_extensions=[RustExtension('fib_rs',
+                                   path='src/rust/Cargo.toml',
+                                   binding=Binding.PyO3,
+                                   )
+                    ]
 )
