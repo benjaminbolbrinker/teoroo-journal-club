@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "18ba75d112f32656bd09c4cc058ad867e94aff57954c2d4e3d2f04d39530d86d"
+            "sha256": "a9c4a9632ac8bab2f817cefa70c2881fa6c4bf309c8081eda97a6a6ebf64de36"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -17,8 +17,7 @@
     },
     "default": {
         "how-to-speedup-python": {
-            "path": ".",
-            "version": "==0.1.0"
+            "path": "."
         },
         "semantic-version": {
             "hashes": [
@@ -43,6 +42,10 @@
             ],
             "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==0.10.2"
+        },
+        "uu-journal-club": {
+            "path": ".",
+            "version": "==0.1.0"
         }
     },
     "develop": {}

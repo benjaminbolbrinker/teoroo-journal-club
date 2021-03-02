@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 setuptools-rust = "*"
 how-to-speedup-python = {path = "."}
+uu-journal-club = {path = "."}
 
 [requires]
 python_version = "3.8"
