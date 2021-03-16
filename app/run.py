@@ -2,7 +2,6 @@
 
 import fib_c 
 import fib_rs
-import src.python.fib as fib_py
 
 print("Calling foreign functions from python:")
 print()
@@ -16,7 +15,3 @@ print()
 print("rust says the 40th Fibonacci number is... ", end='')
 print(fib_rs.fib(40))
 print()
-
-# Call Python function
-print("python says the 40th Fibonacci number is... ", end='')
-print(fib_py.fib(40))
