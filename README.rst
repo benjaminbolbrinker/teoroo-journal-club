@@ -2,19 +2,19 @@
    :language: bash
 
 Description
------------
+###########
 
 This is a simple Python project illustrating how Python functions can be exposed from both C and Rust 
-using the C Python API (:ref:`https://docs.python.org/3/extending/extending.html`) 
-and Rust's PyO3 library (:ref:`https://github.com/PyO3/pyo3`), respectively.
+using the C Python API (:xref:`https://docs.python.org/3/extending/extending.html`) 
+and Rust's PyO3 library (:xref:`https://github.com/PyO3/pyo3`), respectively.
 
 What is going on?
------------------
+*****************
 
 Inside the :code:`src/python` folder
------------------
+------------------------------------
 
-Let's assume we want to calculate the *n*th number of the Fibonacci Sequence.
+Let's assume we want to calculate the *n*th number of the Fibonacci sequence.
 We have written the following recursive function.
 
 .. code:: python
@@ -24,11 +24,17 @@ We have written the following recursive function.
             return 1
         return fib(n - 1) + fib(n - 2)
 
-Arguably this implementation is pretty inefficient and has a time complexity of :math:`O(2^N)`.
+Arguably, this implementation is not the most efficient and has a time complexity of :math:`O(2^N)`.
+E.g. calculating the 46th number requires :math:`2^{46}` recursive descents and :math:`2^{46} - 1` additions.
+On a interpreted language like Python this can take quite some time.
 
+In reality it would probably be better to improve the algorithm, but in the following we are trying to speed up this toy example using lower level languages instead.  
 
 Inside the :code:`src/c` folder
 -----------------
+
+In the :code:``
+
 
 Inside the :code:`src/rust` folder
 -----------------
@@ -41,10 +47,10 @@ The :code:`run.py` file
 
 
 Run the project
----------------
+###############
 
 Option 1: Docker (recommended)
-------------------------------
+******************************
 
 Be sure docker is installed.
 
@@ -66,7 +72,7 @@ Run the docker image:
 
 
 Option 2: Pipenv 
------------------
+****************
 
 Prerequisites
 ------------
@@ -110,7 +116,7 @@ For running the interface script execute
 
 
 Option 3: Pip 
--------------
+****************
 
 Prerequisites
 ------------
