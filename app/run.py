@@ -8,12 +8,15 @@ print("Calling foreign functions from python:")
 print()
 
 # Call C function
-print("gcc says the 46th Fibonacci number is", fib_c.fib(46))
+print("gcc says the 40th Fibonacci number is... ", end='')
+print(fib_c.fib(40))
 print()
 
 # Call Rust function
-print("rust says the 46th Fibonacci number is", fib_rs.fib(46))
+print("rust says the 40th Fibonacci number is... ", end='')
+print(fib_rs.fib(40))
 print()
 
 # Call Python function
-print("python says the 46th Fibonacci number is", fib_py.fib(46))
+print("python says the 40th Fibonacci number is... ", end='')
+print(fib_py.fib(40))
