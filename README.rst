@@ -101,8 +101,7 @@ The :code:`run.py` file
 -----------------------
 
 Now, after we have built and installed the source distribution one can import the function from the exposed module.
-The respective functions are called and the result is directed to the standard output.
-
+The respective foreign function calls are specified in this file. The result is directed to the standard output.
 
 Benchmarks
 ----------
@@ -129,6 +128,7 @@ Run the docker image:
 
     docker run teoroo-journal-club
 
+The latter command will sequentially execute both the :code:`run.py` and :code:`benchmark.sh` script.
 
 Option 2: Pipenv (Ubuntu only)
 ******************************
