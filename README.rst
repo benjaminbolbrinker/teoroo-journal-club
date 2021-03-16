@@ -38,8 +38,7 @@ Inside the :code:`src/c` folder
 -----------------
 
 Two files are present here. The :code:`fib.c` file contains a C function which is equivalent to the code above.
-We expose this function using the C Python API. This is done in the :code:`fibpy.c` file.
-For details on how to use the C Python API refer to https://docs.python.org/3/extending/extending.html.
+We expose this function using the C Python API. This is done in the :code:`fibpy.c` file (for details refer to https://docs.python.org/3/extending/extending.html).
 
 Inside the :code:`src/rust` folder
 -----------------
