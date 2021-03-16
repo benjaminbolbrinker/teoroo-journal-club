@@ -5,8 +5,8 @@ Description
 ###########
 
 This is a simple Python project illustrating how Python functions can be exposed from both C and Rust 
-using the C Python API (:xref:`https://docs.python.org/3/extending/extending.html`) 
-and Rust's PyO3 library (:xref:`https://github.com/PyO3/pyo3`), respectively.
+using the C Python API (https://docs.python.org/3/extending/extending.html) 
+and Rust's PyO3 library (https://github.com/PyO3/pyo3), respectively.
 
 What is going on?
 *****************
