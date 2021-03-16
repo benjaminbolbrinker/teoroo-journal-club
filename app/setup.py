@@ -17,7 +17,7 @@ setup(
         'Programming Language :: Python :: 3.8',
     ],
     description="Interface Python with Rust and C",
-    license="GNU General Public License v3",
+    license="MIT",
     include_package_data=True,
     name='teoroo-journal-club',
     url='https://github.com/benjaminbolbrinker/uu-journal-club.git',
