@@ -1,6 +1,10 @@
 Run the project
 ---------------
 
+.. role:: bash(code)
+   :language: bash
+
+
 Option 1: Docker (recommended)
 ------------------------------
 
@@ -12,11 +16,15 @@ Be sure docker is installed.
 
 Build the docker image:
 
-`docker build -t teoroo-journal-club .`
+.. code:: bash
+
+    docker build -t teoroo-journal-club .
 
 Run the docker image:
 
-`docker run teoroo-journal-club`
+.. code:: bash
+
+    docker run teoroo-journal-club
 
 
 Option 2: Pipenv 
@@ -27,30 +35,40 @@ Prerequisites
 
 Make sure python (version => 3.5) is installed.
 Also install: 
-`gcc`, `g++`, `gfortran`, `rust`, `python3-dev` and `python-dev`
+:code:`gcc`, :code:`g++`, :code:`gfortran`, :code:`rust`, :code:`python3-dev` and :code:`python-dev`
 
 Run
 ---
 
 Change your directory
 
-`cd app/`
+.. code:: bash
+
+    cd app/
 
 Create a virtual environment
 
-`pipenv shell`
+.. code:: bash
+
+    pipenv shell
 
 Install the package
 
-`pipenv install .`
+.. code:: bash
+
+    pipenv install .
 
 For running the benchmarks type
 
-`./benchmark.sh`
+.. code:: bash
+
+    ./benchmark.sh
 
 For running the interface script execute
 
-`python run.py`
+.. code:: bash
+
+    python run.py
 
 
 Option 3: Pip 
@@ -61,7 +79,7 @@ Prerequisites
 
 Make sure python (version => 3.5) is installed.
 Also install: 
-`gcc`, `g++`, `gfortran`, `rust`, `python3-dev` and `python-dev`
+:code:`gcc`, :code:`g++`, :code:`gfortran`, :code:`rust`, :code:`python3-dev` and :code:`python-dev`
 
 Run
 ---
@@ -69,20 +87,30 @@ Run
 Make sure python (version => 3.5) is installed.
 Change your directory
 
-`cd app/`
+.. code:: bash
+
+    cd app/
 
 Create a virtual environment
 
-`pip3 shell`
+.. code:: bash
+
+    pip3 shell
 
 Install the package
 
-`pip3 install . --user`
+.. code:: bash
+
+    pip3 install . --user
 
 For running the benchmarks type
 
-`./benchmark.sh`
+.. code:: bash
+
+    ./benchmark.sh
 
 For running the interface script execute
 
-`python3 run.py`
+.. code:: bash
+
+    python3 run.py
