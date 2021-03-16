@@ -58,6 +58,7 @@ Luckily, when using the Python C API or the PyO3 crate :code:`setuptools` we do 
 When using the former include 
 
 .. code:: python
+
     setup(
         ...,
         ext_modules=[Extension('fib_c',
@@ -73,6 +74,7 @@ When using the former include
 it is possible to 
 
 .. code:: python
+
     setup(
         ...,
         rust_extensions=[RustExtension('fib_rs',
