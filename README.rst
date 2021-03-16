@@ -12,7 +12,7 @@ using the C Python API (https://docs.python.org/3/extending/extending.html)
 and Rust's PyO3 crate (https://github.com/PyO3/pyo3), respectively.
 The project is intended as a template and starting point for future projects. 
 
-The project also contains a small (non-representative) benchmark of C, C++, Fortran, Rust and Python in order to provide a feeling for the effiency.
+The project also contains a small (non-representative) benchmark of C, C++, Fortran, Rust, and Python to provide a feeling for the efficiency.
 
 What is going on?
 *****************
@@ -34,7 +34,7 @@ Arguably, this implementation is not the most efficient and has a time complexit
 E.g. calculating the 46th number requires :math:`2^{46}` recursive descents and a summation of :math:`2^{46} - 1` terms.
 Using an interpreted language like Python this can take quite some time.
 
-In reality it would probably be better to improve the algorithm in order to increase computational efficiency, but in the following we are trying to speed up this toy example using lower level languages instead.  
+In reality, it would probably be better to improve the algorithm to increase computational efficiency, but in the following, we are trying to speed up this toy example using lower-level languages instead.  
 
 Inside the :code:`src/c` folder
 -----------------
@@ -53,13 +53,13 @@ The :code:`setup.py` file
 -----------------
 
 When we write code we usually want that it can be used and maintained by others.
-In Python the :code:`setup.py` allows to us to install and distribute the package via somthing like :code:`pip install .`.
+In Python, the :code:`setup.py` allows us to install and distribute the package via something like :code:`pip install .`.
 
-It seems obvious that the C or Rust codes that we have written should be part of the package which we want to distribute.
-When using python one usually distinguishes between built distributions and source distribtions.
-Built distribtions can be though of as binaries (although they might as well not be because they might only contain Python code) in which a package is compiled for a particular hardware and operating system.
-It is not feasable however to provide build distributions for every platform. 
-Packagers solve this issue by turning source distribtions into built distribtions "on the fly".
+It seems obvious that our C or Rust code should be part of the package which we want to distribute.
+When using python one usually distinguishes between built distributions and source distributions.
+Built distributions can be thought of as binaries (although they might as well not be because they might only contain Python code) in which a package is compiled for particular hardware and operating system.
+It is not feasible however to provide build distributions for every platform. 
+Packagers solve this issue by turning source distributions into built distributions "on the fly".
 
 Luckily, when using the Python C API or the PyO3 crate in combination with :code:`setuptools` we do not have to care about all that to much in detail.
 
@@ -100,14 +100,14 @@ More details on the PyO3 cate can be found here (https://github.com/PyO3/setupto
 The :code:`run.py` file
 -----------------------
 
-Now, after we have built and installed the source distribtion one can import the function from the exposed module.
-The respective functions are called and the result is directed to the standart output.
+Now, after we have built and installed the source distribution one can import the function from the exposed module.
+The respective functions are called and the result is directed to the standard output.
 
 
 Benchmarks
 ----------
 
-This project also includes a small benchmark on the Fibonacci implementation described above.implementation described above in order to provide a feeling for the performance of Rust compared with C, C++, Fortran and Python.
+This project also includes a small benchmark on the Fibonacci implementation described above.implementation described above to provide a feeling for the performance of Rust compared with C, C++, Fortran, and Python.
 
 Run the project
 ###############
