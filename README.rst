@@ -115,7 +115,7 @@ Run the project
 Option 1: Docker (recommended)
 ******************************
 
-Be sure docker is installed.
+Be sure docker is installed on your system.
 
 .. code:: bash
 
