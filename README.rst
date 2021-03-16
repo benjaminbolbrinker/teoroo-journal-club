@@ -54,11 +54,15 @@ In Python the :code:`setup.py` allows to us to install and distribute the packag
 
 It seems obvious that the C or Rust codes that we have written should be part of the package which we want to distribute.
 
-Describe Source and build distros.
+When using python one usually distinguishes between built distributions and source distribtions.
+Built distribtions can be though of as binaries (although they might as well not be because they might only contain Python code) in which a package is compiled for a particular hardware and operating system.
+It is not feasable however to provide build distributions for every platform. 
+Packagers solve this issue by turning source distribtions into built distribtions "on the fly".
 
-Luckily, when using the Python C API or the PyO3 crate :code:`setuptools` we do not have to care about much of that.
+Luckily, when using the Python C API or the PyO3 crate in combination with :code:`setuptools` we do not have to care about all that to much.
 
-When using the former include 
+When using the Python C API one can include the following parameter into the :code:`setup` function. 
+This takes care of the compilation and linking process.
 
 .. code:: python
 
@@ -74,7 +78,7 @@ When using the former include
 
 
 
-it is possible to 
+Similarly, when using PyO3 one can include the following parameter. 
 
 .. code:: python
 
@@ -88,10 +92,20 @@ it is possible to
         ...
     )
 
+More details on this can be found here (https://github.com/PyO3/setuptools-rust).
+
 
 The :code:`run.py` file
------------------
+-----------------------
 
+Now, after we have built and installed the source distribtion one can import the function from the exposed module.
+The respective functions are called and the result is printed.
+
+
+Benchmarks
+----------
+
+This project also includes a small benchmark on the Fibonacci implementation described above.implementation described above in order to provide a feeling for the performance of Rust compared with C, C++, Fortran and Python.
 
 Run the project
 ###############
