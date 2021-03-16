@@ -64,7 +64,7 @@ Packagers solve this issue by turning source distributions into built distributi
 Luckily, when using the Python C API or the PyO3 crate in combination with :code:`setuptools` we do not have to care about all that to much in detail.
 
 When using the Python C API one can include the following parameter into the :code:`setup` function. 
-This takes care of the whole compilation and linking process when installing the package using e.g. :code:`pip install .`.
+This takes care of the compilation and linking process when installing the package using e.g. :code:`pip install .`.
 
 .. code:: python
 
