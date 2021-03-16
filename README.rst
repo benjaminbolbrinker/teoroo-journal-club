@@ -19,7 +19,7 @@ Inside the :code:`src/python` folder
 ------------------------------------
 
 Let's assume we want to calculate the *n* th number of the Fibonacci sequence.
-We have written the following recursive function.
+The following recursive function does the job.
 
 .. code:: python
 
