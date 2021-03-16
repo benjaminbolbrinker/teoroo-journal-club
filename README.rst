@@ -14,7 +14,7 @@ What is going on?
 Inside the :code:`src/python` folder
 ------------------------------------
 
-Let's assume we want to calculate the :italic:`n` th number of the Fibonacci sequence.
+Let's assume we want to calculate the *n* th number of the Fibonacci sequence.
 We have written the following recursive function.
 
 .. code:: python
