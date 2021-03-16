@@ -190,7 +190,7 @@ Install:
 Run
 ---
 
-Make sure python (version => 3.8) is installed.
+Make sure python (version == 3.8) is installed.
 Change your directory
 
 .. code:: bash
