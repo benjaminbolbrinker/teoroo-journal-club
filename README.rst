@@ -1,9 +1,31 @@
-Run the project
----------------
-
 .. role:: bash(code)
    :language: bash
 
+Describtion
+-----------
+
+This is a simple Python project illustrating how Python functions can be exposed from both C and Rust 
+using the C Python API (:ref:`https://docs.python.org/3/extending/extending.html`) 
+and Rust's PyO3 library (:ref:`https://github.com/PyO3/pyo3`) respectively.
+
+What is going on?
+-----------------
+
+Inside the :code:`src/c` folder
+-----------------
+
+Inside the :code:`src/rust` folder
+-----------------
+
+The :code:`setup.py` file
+-----------------
+
+The :code:`run.py` file
+-----------------
+
+
+Run the project
+---------------
 
 Option 1: Docker (recommended)
 ------------------------------
@@ -114,3 +136,5 @@ For running the interface script execute
 .. code:: bash
 
     python3 run.py
+
+
