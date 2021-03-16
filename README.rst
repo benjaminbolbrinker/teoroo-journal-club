@@ -39,14 +39,14 @@ Inside the :code:`src/c` folder
 
 Two files are present here. The :code:`fib.c` file contains a C function which is equivalent to the code above.
 We expose this function using the C Python API. This is done in the :code:`fibpy.c` file.
-For details on the C Python API refer to https://docs.python.org/3/extending/extending.html.
+For details on how to use the C Python API refer to https://docs.python.org/3/extending/extending.html.
 
 Inside the :code:`src/rust` folder
 -----------------
 
 When we want to expose Rust functions to Python using the PyO3 crate it is necessary to create a project using :code:`cargo`.
 Similar to above, two files are present in the :code:`src` folder. The :code:`fib.rs` contains the Rust implementation of the Fibonacci function.
-The :code:`lib.rs` exposes this function to Python.
+The :code:`lib.rs` exposes this function to Python (https://github.com/PyO3/pyo3).
 
 The :code:`setup.py` file
 -----------------
