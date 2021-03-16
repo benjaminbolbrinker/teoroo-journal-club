@@ -19,7 +19,7 @@ calculate_fibonacci(PyObject *self, PyObject *args)
 
 static PyMethodDef FibMethods[] = {
     {"fib", calculate_fibonacci, METH_VARARGS,
-     "Execute a shell command."},
+     "Calculate the nth Fibonacci number."},
     {NULL, NULL, 0, NULL}};
 
 static struct PyModuleDef fibmodule = {
