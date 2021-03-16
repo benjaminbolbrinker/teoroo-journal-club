@@ -21,5 +21,4 @@ RUN pip3 install /app
 WORKDIR /app 
 
 # Run
-CMD python3 -u ./run.py
-CMD bash ./benchmark.sh
+CMD python3 -u ./run.py && bash ./benchmark.sh

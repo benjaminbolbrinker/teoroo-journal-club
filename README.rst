@@ -31,7 +31,7 @@ The following recursive function does the job.
         return fib(n - 1) + fib(n - 2)
 
 Arguably, this implementation is not the most efficient and has a time complexity of :math:`O(2^N)`.
-E.g. calculating the 46th number requires :math:`2^{46}` recursive descents and a summation of :math:`2^{46} - 1` terms.
+E.g. calculating the 40th number requires :math:`2^{40}` recursive descents and a summation of :math:`2^{40} - 1` terms.
 Using an interpreted language like Python this can take quite some time.
 
 In reality, it would probably be better to improve the algorithm to increase computational efficiency, but in the following, we are trying to speed up this toy example using lower-level languages instead.  

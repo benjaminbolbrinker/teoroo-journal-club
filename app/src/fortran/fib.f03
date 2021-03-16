@@ -1,7 +1,7 @@
 program fibonacci
     implicit none
 
-	write(*,*) "gfortran says the 46th Fibonacci number is ", fib_rec(46)
+	write(*,*) "gfortran says the 40th Fibonacci number is ", fib_rec(40)
     
     contains
     recursive function fib_rec(n) result(fib)

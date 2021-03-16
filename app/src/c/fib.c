@@ -10,6 +10,6 @@ static uint64_t fib(uint64_t n)
 
 int main(void)
 {
-    printf("gcc says the 46th Fibonacci number is %lu \n", fib(46));
+    printf("gcc says the 40th Fibonacci number is %lu \n", fib(40));
     return 0;
 }
