@@ -107,7 +107,7 @@ The respective functions are called and the result is directed to the standard o
 Benchmarks
 ----------
 
-This project also includes a small benchmark on the Fibonacci implementation described above.implementation described above to provide a feeling for the performance of Rust compared with C, C++, Fortran, and Python.
+This project also includes a small benchmark on the Fibonacci implementation described above to provide a feeling for the performance of Rust compared with C, C++, Fortran, and Python.
 
 Run the project
 ###############
