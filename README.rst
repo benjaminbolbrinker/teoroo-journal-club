@@ -138,7 +138,7 @@ Installation is tested on Ubuntu 20.04.
 Prerequisites
 ------------
 
-Make sure python (version => 3.5) is installed.
+Make sure python (version == 3.8) is installed.
 Also install: 
 :code:`gcc`, :code:`g++`, :code:`gfortran`, :code:`rust`, :code:`python3-dev` and :code:`python-dev`
 
@@ -184,7 +184,7 @@ Installation is tested on Ubuntu 20.04.
 Prerequisites
 ------------
 
-Make sure python (version => 3.5) is installed.
+Make sure python (version == 3.8) is installed.
 Also install: 
 :code:`gcc`, :code:`g++`, :code:`gfortran`, :code:`rust`, :code:`python3-dev` and :code:`python-dev`
 

@@ -7,8 +7,6 @@ verify_ssl = true
 
 [packages]
 setuptools-rust = "*"
-how-to-speedup-python = {path = "."}
-uu-journal-club = {path = "."}
 teoroo-journal-club = {path = "."}
 
 [requires]
