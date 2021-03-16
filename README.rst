@@ -10,6 +10,7 @@ Description
 This is a simple Python project illustrating how Python functions can be exposed from both C and Rust 
 using the C Python API (https://docs.python.org/3/extending/extending.html) 
 and Rust's PyO3 library (https://github.com/PyO3/pyo3), respectively.
+The project also contains a benchmark in order to provide a feeling for the effiency of C, C++, Fortran, Rust and Python.
 
 What is going on?
 *****************
@@ -29,7 +30,7 @@ We have written the following recursive function.
 
 Arguably, this implementation is not the most efficient and has a time complexity of :math:`O(2^N)`.
 E.g. calculating the 46th number requires :math:`2^{46}` recursive descents and :math:`2^{46} - 1` additions.
-On a interpreted language like Python this can take quite some time.
+Using an interpreted language like Python this can take quite some time.
 
 In reality it would probably be better to improve the algorithm, but in the following we are trying to speed up this toy example using lower level languages instead.  
 
