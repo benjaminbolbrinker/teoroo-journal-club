@@ -6,15 +6,16 @@ Option 1: Docker (recommended)
 
 Be sure docker is installed.
 
-`sudo apt install docker.io`
+.. code:: bash
+    sudo apt install docker.io
 
 Build the docker image:
 
-`docker build -t uu-journalclub .`
+`docker build -t teoroo-journal-club .`
 
 Run the docker image:
 
-`docker run uu-journalclub`
+`docker run teoroo-journal-club`
 
 
 Option 2: Pipenv 

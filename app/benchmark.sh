@@ -26,6 +26,6 @@ time ./build/fib_rs
 echo "-------------"
 echo ""
 echo "python:"
-time python ./src/python/fib.py
+time python3 ./src/python/fib.py
 echo "-------------"
 echo ""
