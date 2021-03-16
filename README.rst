@@ -1,6 +1,9 @@
 .. role:: bash(code)
    :language: bash
 
+.. toctree::
+ :maxdepth: 2
+ 
 Description
 ###########
 
