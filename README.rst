@@ -96,6 +96,7 @@ Similarly, when using PyO3 one can include the following parameter.
 
 More details on the PyO3 cate can be found here (https://github.com/PyO3/setuptools-rust).
 
+Of course, when installing the package, the necessary compilers and dependencies have to be already installed on the system.
 
 The :code:`run.py` file
 -----------------------
@@ -112,14 +113,10 @@ This project also includes a small benchmark on the Fibonacci implementation des
 Run the project
 ###############
 
-Option 1: Docker (recommended)
+Option 1: Docker (recommended, plattform independent)
 ******************************
 
-Be sure docker is installed on your system.
-
-.. code:: bash
-
-    sudo apt install docker.io
+Be sure to have docker installed on your system (https://docs.docker.com/get-docker/).
 
 Build the docker image:
 
@@ -134,8 +131,10 @@ Run the docker image:
     docker run teoroo-journal-club
 
 
-Option 2: Pipenv 
-****************
+Option 2: Pipenv (Ubuntu only)
+******************************
+
+Installation is tested on Ubuntu 20.04.
 
 Prerequisites
 ------------
@@ -178,8 +177,10 @@ For running the interface script execute
     python run.py
 
 
-Option 3: Pip 
-****************
+Option 3: Pip (Ubuntu only)
+***************************
+
+Installation is tested on Ubuntu 20.04.
 
 Prerequisites
 ------------
