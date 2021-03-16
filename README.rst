@@ -56,7 +56,7 @@ When we write code we usually want that it can be used and maintained by others.
 In Python, the :code:`setup.py` allows us to install and distribute the package via something like :code:`pip install .`.
 
 It seems obvious that our C or Rust code should be part of the package which we want to distribute.
-When using python one usually distinguishes between built distributions and source distributions.
+When using Python one usually distinguishes between built distributions and source distributions.
 Built distributions can be thought of as binaries (although they might as well not be because they might only contain Python code) in which a package is compiled for particular hardware and operating system.
 It is not feasible however to provide build distributions for every platform. 
 Packagers solve this issue by turning source distributions into built distributions "on the fly".
