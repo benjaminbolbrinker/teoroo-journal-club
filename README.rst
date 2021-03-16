@@ -1,15 +1,31 @@
 .. role:: bash(code)
    :language: bash
 
-Describtion
+Description
 -----------
 
 This is a simple Python project illustrating how Python functions can be exposed from both C and Rust 
 using the C Python API (:ref:`https://docs.python.org/3/extending/extending.html`) 
-and Rust's PyO3 library (:ref:`https://github.com/PyO3/pyo3`) respectively.
+and Rust's PyO3 library (:ref:`https://github.com/PyO3/pyo3`), respectively.
 
 What is going on?
 -----------------
+
+Inside the :code:`src/python` folder
+-----------------
+
+Let's assume we want to calculate the *n*th number of the Fibonacci Sequence.
+We have written the following recursive function.
+
+.. code:: python
+
+    def fib(n):
+        if n <= 1:
+            return 1
+        return fib(n - 1) + fib(n - 2)
+
+Arguably this implementation is pretty inefficient and has a time complexity of :math:`O(2^N)`.
+
 
 Inside the :code:`src/c` folder
 -----------------
