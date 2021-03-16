@@ -10,7 +10,7 @@ Description
 This is a simple Python project illustrating how Python functions can be exposed from both C and Rust 
 using the C Python API (https://docs.python.org/3/extending/extending.html) 
 and Rust's PyO3 crate (https://github.com/PyO3/pyo3), respectively.
-The project is intended as a template.
+The project is intended as a template and starting point for future projects. 
 
 The project also contains a small (non-representative) benchmark of C, C++, Fortran, Rust and Python in order to provide a feeling for the effiency.
 
