@@ -1,11 +1,7 @@
 .. role:: bash(code)
    :language: bash
 
-
-Table of Contents
-#################
-
-.. contents:: 
+.. contents:: Table of contents
     :depth: 3
 
 Description
