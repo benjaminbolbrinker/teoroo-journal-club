@@ -1,9 +1,9 @@
 .. role:: bash(code)
    :language: bash
 
-.. toctree::
- :maxdepth: 2
- 
+.. contents:: Table of Contents
+    :depth: 3
+
 Description
 ###########
 
