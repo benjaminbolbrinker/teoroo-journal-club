@@ -65,6 +65,7 @@ Luckily, when using the Python C API or the PyO3 crate in combination with :code
 
 When using the Python C API one can include the following parameter into the :code:`setup` function. 
 This takes care of the compilation and linking process when installing the package using e.g. :code:`pip install .`.
+Of course, the necessary compilers and dependencies have to be installed on the system for the compilation to succeed.
 
 .. code:: python
 
@@ -95,8 +96,6 @@ Similarly, when using PyO3 one can include the following parameter.
     )
 
 More details on the PyO3 cate can be found here (https://github.com/PyO3/setuptools-rust).
-
-Of course, when installing the package, the necessary compilers and dependencies have to be already installed on the system.
 
 The :code:`run.py` file
 -----------------------
