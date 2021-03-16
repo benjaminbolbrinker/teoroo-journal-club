@@ -58,7 +58,7 @@ In Python, the :code:`setup.py` allows us to install and distribute the package 
 It seems obvious that our C or Rust code should be part of the package which we want to distribute.
 When using Python one usually distinguishes between built distributions and source distributions.
 Built distributions can be thought of as binaries (although they might as well not be because they might only contain Python code) in which a package is compiled for particular hardware and operating system.
-It is not feasible however to provide build distributions for every platform. 
+It is not feasible however, to provide build distributions for every platform. 
 Packagers solve this issue by turning source distributions into built distributions "on the fly".
 
 Luckily, when using the Python C API or the PyO3 crate in combination with :code:`setuptools` we do not have to care about all that too much in detail.
