@@ -12,7 +12,7 @@ using the C Python API (https://docs.python.org/3/extending/extending.html)
 and Rust's PyO3 crate (https://github.com/PyO3/pyo3), respectively.
 The project is intended as a template and starting point for future projects. 
 
-The project also contains a small (non-representative) benchmark of C, C++, Fortran, Rust, and Python to provide a feeling for the efficiency.
+The project also contains a small (non-representative) benchmark of C, C++, Fortran, Rust, and Python to provide a feeling for the relative efficiency of these programming languages.
 
 What is going on?
 *****************
