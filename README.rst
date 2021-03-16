@@ -7,6 +7,7 @@ Option 1: Docker (recommended)
 Be sure docker is installed.
 
 .. code:: bash
+
     sudo apt install docker.io
 
 Build the docker image:
