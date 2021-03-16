@@ -33,14 +33,56 @@ In reality it would probably be better to improve the algorithm, but in the foll
 Inside the :code:`src/c` folder
 -----------------
 
-In the :code:``
-
+Two files are present here. The :code:`fib.c` file contains a C function which is equivalent to the code above.
+We expose this function using the C Python API. This is done in the :code:`fibpy.c` file.
 
 Inside the :code:`src/rust` folder
 -----------------
 
+When we want to expose Rust functions to Python using the PyO3 crate it is necessary to create a project using :code:`cargo`.
+Similar to above, two files are present in the :code:`src` folder. The :code:`fib.rs` contains the Rust implementation of the Fibonacci function.
+The :code:`lib.rs` exposes this function to Python.
+
 The :code:`setup.py` file
 -----------------
+
+When we write code we usually want that it can be used and maintained by others.
+In Python the :code:`setup.py` allows to us to install and distribute the package via somthing like :code:`pip install .`.
+
+It seems obvious that the C or Rust codes that we have written should be part of the package which we want to distribute.
+
+Describe Source and build distros.
+
+Luckily, when using the Python C API or the PyO3 crate :code:`setuptools` we do not have to care about much of that.
+
+When using the former include 
+
+.. code:: python
+    setup(
+        ...,
+        ext_modules=[Extension('fib_c',
+                            sources=['src/c/fibpy.c'],
+                            include_dirs=['src/c/include'],
+                            )
+                    ]
+        ...
+    )
+
+
+
+it is possible to 
+
+.. code:: python
+    setup(
+        ...,
+        rust_extensions=[RustExtension('fib_rs',
+                                    path='src/rust/Cargo.toml',
+                                    binding=Binding.PyO3,
+                                    )
+                        ]
+        ...
+    )
+
 
 The :code:`run.py` file
 -----------------
